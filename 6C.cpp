@@ -1,12 +1,12 @@
-#include <string>
 #include <iostream>
 #include <map>
-#include <vector>
-#include <tuple>
 #include <sstream>
-//#include <bits/stdc++.h>
+#include <string>
+#include <tuple>
+#include <vector>
+// #include <bits/stdc++.h>
 
-int main () {
+int main() {
   int n;
   std::cin >> n;
 

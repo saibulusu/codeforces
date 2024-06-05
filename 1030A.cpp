@@ -1,9 +1,9 @@
-#include <string>
 #include <iostream>
 #include <map>
+#include <string>
 #include <vector>
 
-int main () {
+int main() {
   int n;
   std::cin >> n;
 
@@ -16,7 +16,7 @@ int main () {
       return 0;
     }
   }
-      
+
   std::cout << "EASY" << std::endl;
 
   return 0;
