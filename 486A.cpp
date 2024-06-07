@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main () {
+int main() {
   long long int n;
   std::cin >> n;
 

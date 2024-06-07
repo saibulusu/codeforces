@@ -1,9 +1,6 @@
-#include <string>
 #include <iostream>
-#include <map>
-#include <vector>
 
-int main () {
+int main() {
   int n;
   std::cin >> n;
 

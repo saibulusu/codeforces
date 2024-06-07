@@ -1,12 +1,12 @@
-#include <string>
 #include <iostream>
 #include <map>
-#include <vector>
-#include <tuple>
 #include <sstream>
-//#include <bits/stdc++.h>
+#include <string>
+#include <tuple>
+#include <vector>
+// #include <bits/stdc++.h>
 
-int main () {
+int main() {
   int n, m;
   char president;
   std::cin >> n >> m >> president;
@@ -22,7 +22,7 @@ int main () {
     }
     room.push_back(row);
   }
-  
+
   int colors[26] = {};
   for (int i = 0; i < n; ++i) {
     for (int j = 0; j < m; ++j) {

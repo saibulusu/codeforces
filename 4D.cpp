@@ -1,10 +1,7 @@
-#include <string>
 #include <iostream>
-#include <map>
 #include <vector>
 #include <tuple>
-#include <sstream>
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
 
 int main () {
   // get first row values
