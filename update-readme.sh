@@ -48,11 +48,13 @@ get_problem_name() {
   echo "$name"
 }
 
+problem_list=$(get_problem_list)
+
 readme_content="| # | Name |\n"
 readme_content+="|:--|:--|\n"
+
 for file in "${cpp_files[@]}"; do
   problem_id="$file"
-  problem_list=$(get_problem_list)
   problem_name=$(get_problem_name "$problem_id" "$problem_list")
 
   num=${problem_id//[!0-9]/}
