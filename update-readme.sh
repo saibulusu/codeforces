@@ -33,7 +33,7 @@ sort_array_custom cpp_files
 
 readme_content=""
 for file in "${cpp_files[@]}"; do
-  readme_content+="- [$file](https://github.com/saibulusu/codeforces/blob/main/$file.cpp)\n"
+  readme_content+="- [$file]($file.cpp)\n"
 done
 
 echo -e "$readme_content" > README.md
