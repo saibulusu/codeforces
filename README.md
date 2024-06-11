@@ -1,0 +1,11 @@
+- [4D](https://github.com/saibulusu/codeforces/blob/main/4D.cpp)
+- [5C](https://github.com/saibulusu/codeforces/blob/main/5C.cpp)
+- [6B](https://github.com/saibulusu/codeforces/blob/main/6B.cpp)
+- [6C](https://github.com/saibulusu/codeforces/blob/main/6C.cpp)
+- [7B](https://github.com/saibulusu/codeforces/blob/main/7B.cpp)
+- [8B](https://github.com/saibulusu/codeforces/blob/main/8B.cpp)
+- [344A](https://github.com/saibulusu/codeforces/blob/main/344A.cpp)
+- [467A](https://github.com/saibulusu/codeforces/blob/main/467A.cpp)
+- [486A](https://github.com/saibulusu/codeforces/blob/main/486A.cpp)
+- [1030A](https://github.com/saibulusu/codeforces/blob/main/1030A.cpp)
+
