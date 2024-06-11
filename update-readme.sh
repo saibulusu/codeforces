@@ -33,6 +33,7 @@ sort_array_custom cpp_files
 
 get_problem_list() {
   local response=$(curl -s "https://codeforces.com/api/problemset.problems")
+  echo "$response"
 }
 
 get_problem_name() {
