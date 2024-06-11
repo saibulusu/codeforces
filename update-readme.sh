@@ -49,7 +49,7 @@ get_problem_name() {
 }
 
 readme_content="| # | Name |\n"
-readme_content+="|--|--|--|\n"
+readme_content+="|--|--|\n"
 for file in "${cpp_files[@]}"; do
   problem_id="$file"
   problem_list=$(get_problem_list)
@@ -59,7 +59,7 @@ for file in "${cpp_files[@]}"; do
   letter=${problem_id//[0-9]/}
   
   #readme_content+="- [$problem_name]($file.cpp)\n"
-  readme_content+="| [$problem_id](https://codeforces.com/problemset/problem/$num/$letter) | [$problem_name]($file.cpp) |  |\n"
+  readme_content+="| [$problem_id](https://codeforces.com/problemset/problem/$num/$letter) | [$problem_name]($file.cpp) |\n"
 done
 
 echo -e "$readme_content" > README.md
