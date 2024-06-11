@@ -52,6 +52,8 @@ for file in "${cpp_files[@]}"; do
   problem_id="$file"
   problem_list=$(get_problem_list)
   problem_name=$(get_problem_name "$problem_id" "$problem_list")
+
+  echo "$problem_id" "$problem_name"
   
   readme_content+="- [$problem_name]($file.cpp)\n"
 done
