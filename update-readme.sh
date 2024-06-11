@@ -49,7 +49,7 @@ get_problem_name() {
 }
 
 readme_content="| # | Name |\n"
-readme_content+="|--|--|\n"
+readme_content+="|:--|:--|\n"
 for file in "${cpp_files[@]}"; do
   problem_id="$file"
   problem_list=$(get_problem_list)
