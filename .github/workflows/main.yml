@@ -11,7 +11,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Run-Script
+       - name: Checkout
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 3
+       - name: Run-Script
         run: |
           chmod +x ./update-readme.sh
           ./update-readme.sh
