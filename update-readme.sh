@@ -31,9 +31,25 @@ sort_array_custom() {
 
 sort_array_custom cpp_files
 
+get_problem_list() {
+  local response=$(curl -s "https://codeforces.com/api/problemset.problems")
+}
+
+get_problem_name() {
+  local problem_id="$1"
+  local problem_list="$2"
+
+  local problem_name=$(echo "$problem_list" | jq -r ".result.problems[] | select(.contestId == $problem_id / 1000 and .index == \"$((problem_id % 1000))\") | .name")
+  echo "$problem_name"
+}
+
 readme_content=""
 for file in "${cpp_files[@]}"; do
-  readme_content+="- [$file]($file.cpp)\n"
+  local problem_id="$file"
+  local problem_list=$(get_problem_list)
+  local problem_name=$(get_problem_name "$problem_id" "$problem_list")
+  
+  readme_content+="- [$problem_name]($file.cpp)\n"
 done
 
 echo -e "$readme_content" > README.md
