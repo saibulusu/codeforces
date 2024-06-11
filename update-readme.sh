@@ -40,10 +40,11 @@ get_problem_name() {
   local problem_list="$2"
 
   local contestId="${problem_id%%[A-Z]*}"
-  local index="${input##*[0-9]}"
+  local index="${problem_id##*[0-9]}"
 
-  local problem_name=$(echo "$problem_list" | jq -r ".result.problems[] | select(.contestId == ($contestId | tonumber) and .index == \"$index\") | .name")
-  echo "$problem_name"
+  local name=$(echo "$problem_list" | jq -r --arg contestId "$contestId" --arg index "$index" '.result.problems[] | select(.contestId == ($contestId | tonumber) and .index == $index) | .name')
+
+  echo "$name"
 }
 
 readme_content=""
