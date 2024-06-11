@@ -39,7 +39,10 @@ get_problem_name() {
   local problem_id="$1"
   local problem_list="$2"
 
-  local problem_name=$(echo "$problem_list" | jq -r ".result.problems[] | select(.contestId == $problem_id / 1000 and .index == \"$((problem_id % 1000))\") | .name")
+  local contestId="${problem_id%%[A-Z]*}"
+  local index="${input##*[0-9]}"
+
+  local problem_name=$(echo "$problem_list" | jq -r ".result.problems[] | select(.contestId == $contestId and .index == \"$index\") | .name")
   echo "$problem_name"
 }
 
