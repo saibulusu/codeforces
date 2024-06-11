@@ -58,7 +58,7 @@ for file in "${cpp_files[@]}"; do
   num=${problem_id//[!0-9]/}
   letter=${problem_id//[0-9]/}
   
-  readme_content+="- [$problem_name]($file.cpp)\n"
+  #readme_content+="- [$problem_name]($file.cpp)\n"
   readme_content+="| [$problem_id](https://codeforces.com/problemset/problem/$num/$letter) | [$problem_name]($file.cpp) |  |\n"
 done
 
