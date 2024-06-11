@@ -18,5 +18,5 @@ jobs:
         run: pwd
       - name: Run-Script
         run: |
-          chmod +x ./update-version.sh
-          ./update-version.sh
+          chmod +x ./update-readme.sh
+          ./update-readme.sh
