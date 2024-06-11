@@ -41,6 +41,6 @@ echo -e "$readme_content" > README.md
 git config --global advice.detachedHead false
 git config user.email "sai.bulusu@gmail.com"
 git config user.name "saibulusu"
-git add -f VERSION
+git add .
 git commit -m "Updating README.md"
 git push
