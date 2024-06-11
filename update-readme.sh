@@ -45,9 +45,9 @@ get_problem_name() {
 
 readme_content=""
 for file in "${cpp_files[@]}"; do
-  local problem_id="$file"
-  local problem_list=$(get_problem_list)
-  local problem_name=$(get_problem_name "$problem_id" "$problem_list")
+  problem_id="$file"
+  problem_list=$(get_problem_list)
+  problem_name=$(get_problem_name "$problem_id" "$problem_list")
   
   readme_content+="- [$problem_name]($file.cpp)\n"
 done
