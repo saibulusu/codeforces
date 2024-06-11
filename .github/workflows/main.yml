@@ -1,0 +1,17 @@
+name: Update README 
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Run-Script
+        run: |
+          chmod +x ./update-readme.sh
+          ./update-readme.sh
