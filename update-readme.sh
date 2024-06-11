@@ -8,11 +8,8 @@ for file in "$DIRECTORY"/*.cpp; do
   if [[ -f "$file" ]]; then  # Check if the file exists
     file_name=$(basename "$file")
     file_name="${file_name%.cpp}"
-    echo "Processing $file_name..."
 
     cpp_files+=("$file_name")
-  else
-    echo "No .cpp files found in $DIRECTORY."
   fi
 done
 
@@ -33,4 +30,10 @@ sort_array_custom() {
 }
 
 sort_array_custom cpp_files
-echo "After sorting: ${cpp_files[@]}"
+
+readme_content=""
+for file in "${cpp_files[@]}"; do
+  readme_content+="- [$file]\n"
+done
+
+echo "$readme_content"
