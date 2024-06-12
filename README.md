@@ -2,6 +2,7 @@
 | Problem | Solution |
 |:--|:--|
 | [2A](https://codeforces.com/problemset/problem/2/A) | [Winner](2A.cpp) |
+| [3B](https://codeforces.com/problemset/problem/3/B) | [Lorry](3B.cpp) |
 | [4D](https://codeforces.com/problemset/problem/4/D) | [Mysterious Present](4D.cpp) |
 | [5C](https://codeforces.com/problemset/problem/5/C) | [Longest Regular Bracket Sequence](5C.cpp) |
 | [6B](https://codeforces.com/problemset/problem/6/B) | [President's Office](6B.cpp) |
