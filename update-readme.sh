@@ -31,11 +31,9 @@ get_problem_list() {
 }
 
 get_problem_name() {
-  local problem_id="$1"
-  local problem_list="$2"
-
-  local contestId="${problem_id%%[A-Z]*}"
-  local index="${problem_id##*[0-9]}"
+  local contestId="$1"
+  local index="$2"
+  local problem_list="$3"
 
   local name=$(echo "$problem_list" | jq -r --arg contestId "$contestId" --arg index "$index" '.result.problems[] | select(.contestId == ($contestId | tonumber) and .index == $index) | .name')
 
@@ -44,16 +42,16 @@ get_problem_name() {
 
 problem_list=$(get_problem_list)
 
-readme_content="My Codeforces Solutions\n"
+readme_content="#My Codeforces Solutions\n"
 readme_content+="| Problem | Solution |\n"
 readme_content+="|:--|:--|\n"
 
 for file in "${cpp_files[@]}"; do
   problem_id="$file"
-  problem_name=$(get_problem_name "$problem_id" "$problem_list")
-
   num=${problem_id//[!0-9]/}
   letter=${problem_id//[0-9]/}
+  
+  problem_name=$(get_problem_name "$num" "$letter" "$problem_list")
   
   readme_content+="| [$problem_id](https://codeforces.com/problemset/problem/$num/$letter) | [$problem_name]($file.cpp) |\n"
 done
