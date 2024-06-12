@@ -1,4 +1,5 @@
-| # | Name |
+My Codeforces Solutions
+| Problem | Solution |
 |:--|:--|
 | [4D](https://codeforces.com/problemset/problem/4/D) | [Mysterious Present](4D.cpp) |
 | [5C](https://codeforces.com/problemset/problem/5/C) | [Longest Regular Bracket Sequence](5C.cpp) |
