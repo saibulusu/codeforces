@@ -1,11 +1,9 @@
-# Directory containing the .cpp files
-DIRECTORY="./"  # You can change this to the specific directory path if needed
+DIRECTORY="./"
 
 cpp_files=()
 
-# Iterate through all .cpp files in the directory
 for file in "$DIRECTORY"/*.cpp; do
-  if [[ -f "$file" ]]; then  # Check if the file exists
+  if [[ -f "$file" ]]; then
     file_name=$(basename "$file")
     file_name="${file_name%.cpp}"
 
@@ -13,17 +11,13 @@ for file in "$DIRECTORY"/*.cpp; do
   fi
 done
 
-# Function to sort the array
 sort_array_custom() {
-  local -n arr=$1  # Use nameref to pass array by reference
+  local -n arr=$1
 
-  # Custom sort function
   mapfile -t arr < <(
     for item in "${arr[@]}"; do
-      # Extract the numeric and letter parts
       num=${item//[!0-9]/}
       letter=${item//[0-9]/}
-      # Print the numeric part padded to 10 digits followed by the letter and the original item
       printf "%010d%s %s\n" "$num" "$letter" "$item"
     done | sort | awk '{print $2}'
   )
@@ -50,7 +44,8 @@ get_problem_name() {
 
 problem_list=$(get_problem_list)
 
-readme_content="| # | Name |\n"
+readme_content="My Codeforces Solutions\n"
+readme_content+="| Problem | Solution |\n"
 readme_content+="|:--|:--|\n"
 
 for file in "${cpp_files[@]}"; do
@@ -60,7 +55,6 @@ for file in "${cpp_files[@]}"; do
   num=${problem_id//[!0-9]/}
   letter=${problem_id//[0-9]/}
   
-  #readme_content+="- [$problem_name]($file.cpp)\n"
   readme_content+="| [$problem_id](https://codeforces.com/problemset/problem/$num/$letter) | [$problem_name]($file.cpp) |\n"
 done
 
