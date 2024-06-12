@@ -42,7 +42,7 @@ get_problem_name() {
 
 problem_list=$(get_problem_list)
 
-readme_content="#My Codeforces Solutions\n"
+readme_content="## My Codeforces Solutions\n"
 readme_content+="| Problem | Solution |\n"
 readme_content+="|:--|:--|\n"
 
