@@ -60,6 +60,14 @@ int main() {
   // i moves through kayaks, j moves through catamarans
   int i = 0, j = 0;
 
+  if (v % 2 == 1 && kayaks.size() >= 1) {
+    optimalCapacity += kayaks[0].second;
+    optimalNumKayaks += 1;
+    res.push_back(kayaks[0].first);
+    i += 1;
+    v -= 1;
+  }
+
   // 2 kayaks & 1 catamaran
   while (v > 0 && i + 1 < kayaks.size() && j < catamarans.size()) {
     if (v < 2) {
@@ -69,21 +77,22 @@ int main() {
     int doubleKayak = kayaks[i].second + kayaks[i + 1].second;
     int singleCatamaran = catamarans[j].second;
     if (doubleKayak >= singleCatamaran) {
-      if (debug)
-        cout << "selecting " << kayaks[i].first << " " << kayaks[i + 1].first
-             << endl;
       res.push_back(kayaks[i].first);
       res.push_back(kayaks[i + 1].first);
       optimalCapacity += doubleKayak;
       optimalNumKayaks += 2;
+      if (debug)
+        cout << "selecting " << kayaks[i].first << " " << kayaks[i + 1].first
+             << " optimalCapacity = " << optimalCapacity << endl;
       i += 2;
       v -= 2;
     } else {
-      if (debug)
-        cout << "selecting " << catamarans[j].first << endl;
       res.push_back(catamarans[j].first);
       optimalCapacity += singleCatamaran;
       optimalNumCatamarans += 1;
+      if (debug)
+        cout << "selecting " << catamarans[j].first
+             << " optimalCapacity = " << optimalCapacity << endl;
       j += 1;
       v -= 2;
     }
@@ -94,11 +103,12 @@ int main() {
     int singleKayak = kayaks[i].second;
     int singleCatamaran = catamarans[j].second;
     if (singleKayak >= singleCatamaran && v >= 1) {
-      if (debug)
-        cout << "selecting " << kayaks[i].first << endl;
       res.push_back(kayaks[i].first);
       optimalCapacity += singleKayak;
       optimalNumKayaks += 1;
+      if (debug)
+        cout << "selecting " << kayaks[i].first
+             << " optimalCapacity = " << optimalCapacity << endl;
       i += 1;
       v -= 1;
     } else if (singleCatamaran > singleKayak && v >= 2) {
@@ -117,11 +127,12 @@ int main() {
   // 1 kayak
   while (v > 0 && i < kayaks.size()) {
     if (v >= 1) {
-      if (debug)
-        cout << "selecting " << kayaks[i].first << endl;
       res.push_back(kayaks[i].first);
       optimalCapacity += kayaks[i].second;
       optimalNumKayaks += 1;
+      if (debug)
+        cout << "selecting " << kayaks[i].first
+             << " optimalCapacity = " << optimalCapacity << endl;
       v -= 1;
     }
     i += 1;
@@ -130,11 +141,12 @@ int main() {
   // 1 catamaran
   while (v > 0 && j < catamarans.size()) {
     if (v >= 2) {
-      if (debug)
-        cout << "selecting " << catamarans[j].first << endl;
       res.push_back(catamarans[j].first);
       optimalCapacity += catamarans[j].second;
       optimalNumCatamarans += 1;
+      if (debug)
+        cout << "selecting " << catamarans[j].first
+             << " optimalCapacity = " << optimalCapacity << endl;
       v -= 2;
     }
     j += 1;
