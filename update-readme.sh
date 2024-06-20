@@ -2,7 +2,7 @@ DIRECTORY="./"
 
 cpp_files=()
 
-for file in "$DIRECTORY"/*.cpp; do
+for file in "$DIRECTORY"/src/*.cpp; do
   if [[ -f "$file" ]]; then
     file_name=$(basename "$file")
     file_name="${file_name%.cpp}"
