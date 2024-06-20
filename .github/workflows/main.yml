@@ -14,8 +14,6 @@ jobs:
         uses: actions/checkout@main
         with:
           fetch-depth: 3
-      - name: PWD
-        run: pwd
       - name: Run-Script
         run: |
           chmod +x ./update-readme.sh
