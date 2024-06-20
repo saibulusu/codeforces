@@ -53,7 +53,7 @@ for file in "${cpp_files[@]}"; do
   
   problem_name=$(get_problem_name "$num" "$letter" "$problem_list")
   
-  readme_content+="| [$problem_id](https://codeforces.com/problemset/problem/$num/$letter) | [$problem_name]($file.cpp) |\n"
+  readme_content+="| [$problem_id](https://codeforces.com/problemset/problem/$num/$letter) | [$problem_name](src/$file.cpp) |\n"
 done
 
 echo -e "$readme_content" > README.md
