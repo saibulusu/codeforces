@@ -1,5 +1,4 @@
 #include <cmath>
-#include <functional>
 #include <iomanip>
 #include <iostream>
 
@@ -21,7 +20,7 @@ double gcd(double a, double b) {
 }
 
 int main() {
-  bool debug = true;
+  bool debug = false;
 
   point p1, p2, p3;
   cin >> p1.x >> p1.y >> p2.x >> p2.y >> p3.x >> p3.y;
@@ -69,15 +68,24 @@ int main() {
   }
 
   double n, theta;
+  double epsilon = 0.00001;
 
   for (n = 3.0; n <= 100.0; n += 1.0) {
     theta = 2 / n * PI;
     double p1p2Divide = p1p2Angle / theta;
     double p2p3Divide = p2p3Angle / theta;
     double p3p1Divide = p3p1Angle / theta;
-    if (floor(p1p2Divide) == p1p2Divide && floor(p2p3Divide) == p2p3Divide &&
-        floor(p3p1Divide) == p3p1Divide) {
+
+    if (abs(trunc(p1p2Divide) - p1p2Divide) < epsilon &&
+        abs(trunc(p2p3Divide) - p2p3Divide) < epsilon &&
+        abs(trunc(p3p1Divide) - p3p1Divide) < epsilon) {
       break;
+    }
+
+    if (debug) {
+      cout << n << " " << theta << " " << fixed << setprecision(10)
+           << p1p2Divide << " " << p2p3Divide << " " << p3p1Divide << " "
+           << endl;
     }
   }
 
@@ -86,18 +94,14 @@ int main() {
     cout << "n = " << n << endl;
   }
 
-  /*
-  double n = 2 / theta * PI;
   double singleArea = radius * radius * cos(theta / 2) * sin(theta / 2);
   double totalArea = singleArea * n;
 
   if (debug) {
-    cout << "n = " << n << endl;
     cout << "singleArea = " << singleArea << endl;
   }
 
   cout << fixed << setprecision(6) << totalArea << endl;
-  */
 
   return 0;
 }
