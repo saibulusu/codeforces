@@ -2,6 +2,7 @@
 | Problem | Solution |
 |:--|:--|
 | [2A](https://codeforces.com/problemset/problem/2/A) | [Winner](src/2A.cpp) |
+| [2B](https://codeforces.com/problemset/problem/2/B) | [The least round way](src/2B.cpp) |
 | [3B](https://codeforces.com/problemset/problem/3/B) | [Lorry](src/3B.cpp) |
 | [4D](https://codeforces.com/problemset/problem/4/D) | [Mysterious Present](src/4D.cpp) |
 | [5C](https://codeforces.com/problemset/problem/5/C) | [Longest Regular Bracket Sequence](src/5C.cpp) |
