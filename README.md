@@ -7,6 +7,7 @@
 | [3B](https://codeforces.com/problemset/problem/3/B) | [Lorry](src/3B.cpp) |
 | [4D](https://codeforces.com/problemset/problem/4/D) | [Mysterious Present](src/4D.cpp) |
 | [5C](https://codeforces.com/problemset/problem/5/C) | [Longest Regular Bracket Sequence](src/5C.cpp) |
+| [5D](https://codeforces.com/problemset/problem/5/D) | [Follow Traffic Rules](src/5D.cpp) |
 | [6B](https://codeforces.com/problemset/problem/6/B) | [President's Office](src/6B.cpp) |
 | [6C](https://codeforces.com/problemset/problem/6/C) | [Alice, Bob and Chocolate](src/6C.cpp) |
 | [7B](https://codeforces.com/problemset/problem/7/B) | [Memory Manager](src/7B.cpp) |
