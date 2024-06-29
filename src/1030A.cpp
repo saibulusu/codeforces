@@ -1,20 +1,22 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
   int n;
-  std::cin >> n;
+  cin >> n;
 
   for (int i = 0; i < n; ++i) {
     char c;
-    std::cin >> c;
+    cin >> c;
 
     if (c == '1') {
-      std::cout << "HARD" << std::endl;
+      cout << "HARD" << endl;
       return 0;
     }
   }
 
-  std::cout << "EASY" << std::endl;
+  cout << "EASY" << endl;
 
   return 0;
 }

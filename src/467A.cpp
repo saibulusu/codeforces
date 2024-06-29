@@ -1,19 +1,21 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
   int n;
-  std::cin >> n;
+  cin >> n;
 
   int res = 0;
   for (int i = 0; i < n; ++i) {
     int p, q;
-    std::cin >> p >> q;
+    cin >> p >> q;
 
     if (p + 2 <= q) {
       ++res;
     }
   }
 
-  std::cout << res << std::endl;
+  cout << res << endl;
   return 0;
 }

@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 struct block {
   int id;
   int prev, next;
@@ -9,42 +11,42 @@ struct block {
 
 int main() {
   int t, m;
-  std::cin >> t >> m;
+  cin >> t >> m;
 
-  std::vector<struct block> blocks(m);
+  vector<struct block> blocks(m);
   blocks[0].id = 0;
   blocks[0].prev = -1;
   blocks[0].next = m;
   blocks[0].size = m;
 
-  std::vector<int> map(1);
+  vector<int> map(1);
 
   bool debug = false;
 
   if (debug) {
-    std::cout << "blocks:" << std::endl;
+    cout << "blocks:" << endl;
     for (auto block : blocks) {
-      std::cout << block.id << " " << block.next << " " << block.size << " "
-                << block.prev << std::endl;
+      cout << block.id << " " << block.next << " " << block.size << " "
+           << block.prev << endl;
     }
 
-    std::cout << "map:" << std::endl;
+    cout << "map:" << endl;
     for (int j = 1; j < map.size(); ++j) {
-      std::cout << j << ": " << map[j] << " ";
+      cout << j << ": " << map[j] << " ";
     }
 
-    std::cout << std::endl << std::endl;
+    cout << endl << endl;
   }
 
   for (int i = 0; i < t; ++i) {
-    std::string op;
-    std::cin >> op;
+    string op;
+    cin >> op;
     if (op.compare("alloc") == 0) {
       int n;
-      std::cin >> n;
+      cin >> n;
 
       if (debug) {
-        std::cout << op << " " << n << std::endl;
+        cout << op << " " << n << endl;
       }
 
       int cur = 0;
@@ -69,7 +71,7 @@ int main() {
           blocks[cur].next = cur + n;
           map.push_back(cur);
 
-          std::cout << (map.size() - 1) << std::endl;
+          cout << (map.size() - 1) << endl;
           added = true;
           break;
         } else {
@@ -78,40 +80,39 @@ int main() {
       }
 
       if (!added) {
-        std::cout << "NULL" << std::endl;
+        cout << "NULL" << endl;
       }
 
       if (debug) {
-        std::cout << "blocks:" << std::endl;
+        cout << "blocks:" << endl;
         for (auto block : blocks) {
-          std::cout << block.id << " " << block.next << " " << block.size << " "
-                    << block.prev << std::endl;
+          cout << block.id << " " << block.next << " " << block.size << " "
+               << block.prev << endl;
         }
 
-        std::cout << "map:" << std::endl;
+        cout << "map:" << endl;
         for (int j = 1; j < map.size(); ++j) {
-          std::cout << j << ": " << map[j] << " ";
+          cout << j << ": " << map[j] << " ";
         }
 
-        std::cout << std::endl << std::endl;
+        cout << endl << endl;
       }
     } else if (op.compare("erase") == 0) {
       int x;
-      std::cin >> x;
+      cin >> x;
 
       if (debug) {
-        std::cout << op << " " << x << std::endl;
+        cout << op << " " << x << endl;
       }
 
       if (x >= map.size() || x <= 0 || map[x] == -1) {
-        std::cout << "ILLEGAL_ERASE_ARGUMENT" << std::endl;
+        cout << "ILLEGAL_ERASE_ARGUMENT" << endl;
       } else {
         blocks[map[x]].id = 0;
         int prevId = blocks[map[x]].prev;
         int nextId = blocks[map[x]].next;
         if (debug) {
-          std::cout << "prevId = " << prevId << " nextId = " << nextId
-                    << std::endl;
+          cout << "prevId = " << prevId << " nextId = " << nextId << endl;
         }
         if (nextId != m) {
           if (blocks[nextId].id == 0) {
@@ -135,25 +136,25 @@ int main() {
         map[x] = -1;
       }
       if (debug) {
-        std::cout << "blocks:" << std::endl;
+        cout << "blocks:" << endl;
         for (auto block : blocks) {
-          std::cout << block.id << " " << block.next << " " << block.size << " "
-                    << block.prev << std::endl;
+          cout << block.id << " " << block.next << " " << block.size << " "
+               << block.prev << endl;
         }
 
-        std::cout << "map:" << std::endl;
+        cout << "map:" << endl;
         for (int j = 1; j < map.size(); ++j) {
-          std::cout << j << ": " << map[j] << " ";
+          cout << j << ": " << map[j] << " ";
         }
 
-        std::cout << std::endl << std::endl;
+        cout << endl << endl;
       }
     } else {
       if (debug) {
-        std::cout << op << std::endl;
+        cout << op << endl;
       }
 
-      std::vector<struct block> copy(m);
+      vector<struct block> copy(m);
       int curblocks = 0, curCopy = 0;
       int prevCopy = -1;
       copy[0].prev = -1;
@@ -182,18 +183,18 @@ int main() {
       blocks = copy;
 
       if (debug) {
-        std::cout << "blocks:" << std::endl;
+        cout << "blocks:" << endl;
         for (auto block : blocks) {
-          std::cout << block.id << " " << block.next << " " << block.size << " "
-                    << block.prev << std::endl;
+          cout << block.id << " " << block.next << " " << block.size << " "
+               << block.prev << endl;
         }
 
-        std::cout << "map:" << std::endl;
+        cout << "map:" << endl;
         for (int j = 1; j < map.size(); ++j) {
-          std::cout << j << ": " << map[j] << " ";
+          cout << j << ": " << map[j] << " ";
         }
 
-        std::cout << std::endl << std::endl;
+        cout << endl << endl;
       }
     }
   }

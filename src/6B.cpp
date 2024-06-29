@@ -1,23 +1,21 @@
 #include <iostream>
-#include <map>
-#include <sstream>
-#include <string>
-#include <tuple>
 #include <vector>
 // #include <bits/stdc++.h>
+
+using namespace std;
 
 int main() {
   int n, m;
   char president;
-  std::cin >> n >> m >> president;
+  cin >> n >> m >> president;
 
-  std::vector<std::vector<char>> room;
+  vector<vector<char>> room;
 
   for (int i = 0; i < n; ++i) {
-    std::vector<char> row;
+    vector<char> row;
     for (int j = 0; j < m; ++j) {
       char cur;
-      std::cin >> cur;
+      cin >> cur;
       row.push_back(cur);
     }
     room.push_back(row);
@@ -50,7 +48,7 @@ int main() {
     }
   }
 
-  std::cout << count << std::endl;
+  cout << count << endl;
 
   return 0;
 }

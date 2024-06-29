@@ -1,19 +1,17 @@
 #include <iostream>
-#include <map>
-#include <sstream>
-#include <string>
-#include <tuple>
 #include <vector>
 // #include <bits/stdc++.h>
 
+using namespace std;
+
 int main() {
   int n;
-  std::cin >> n;
+  cin >> n;
 
-  std::vector<int> t;
+  vector<int> t;
   for (int i = 0; i < n; ++i) {
     int time;
-    std::cin >> time;
+    cin >> time;
     t.push_back(time);
   }
 
@@ -45,6 +43,6 @@ int main() {
     }
   }
 
-  std::cout << alice << " " << bob << std::endl;
+  cout << alice << " " << bob << endl;
   return 0;
 }

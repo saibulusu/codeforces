@@ -1,16 +1,18 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 int main() {
   int n;
-  std::cin >> n;
+  cin >> n;
 
   int groups = 0;
-  std::string prev = "00";
+  string prev = "00";
 
   for (int i = 0; i < n; ++i) {
-    std::string cur;
-    std::cin >> cur;
+    string cur;
+    cin >> cur;
 
     if (prev != cur) {
       ++groups;
@@ -18,7 +20,7 @@ int main() {
     }
   }
 
-  std::cout << groups << std::endl;
+  cout << groups << endl;
 
   return 0;
 }
