@@ -10,6 +10,8 @@
 | [5D](https://codeforces.com/problemset/problem/5/D) | [Follow Traffic Rules](src/5D.cpp) |
 | [6B](https://codeforces.com/problemset/problem/6/B) | [President's Office](src/6B.cpp) |
 | [6C](https://codeforces.com/problemset/problem/6/C) | [Alice, Bob and Chocolate](src/6C.cpp) |
+| [6E](https://codeforces.com/problemset/problem/6/E) | [Exposition](src/6E.cpp) |
+| [7A](https://codeforces.com/problemset/problem/7/A) | [Kalevitch and Chess](src/7A.cpp) |
 | [7B](https://codeforces.com/problemset/problem/7/B) | [Memory Manager](src/7B.cpp) |
 | [7C](https://codeforces.com/problemset/problem/7/C) | [Line](src/7C.cpp) |
 | [8B](https://codeforces.com/problemset/problem/8/B) | [Obsession with Robots](src/8B.cpp) |
