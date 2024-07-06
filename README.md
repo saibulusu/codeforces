@@ -1,6 +1,8 @@
 ## My Codeforces Solutions
 | Problem | Solution |
 |:--|:--|
+| [1A](https://codeforces.com/problemset/problem/1/A) | [Theatre Square](src/1A.cpp) |
+| [1B](https://codeforces.com/problemset/problem/1/B) | [Spreadsheet](src/1B.cpp) |
 | [1C](https://codeforces.com/problemset/problem/1/C) | [Ancient Berland Circus](src/1C.cpp) |
 | [2A](https://codeforces.com/problemset/problem/2/A) | [Winner](src/2A.cpp) |
 | [2B](https://codeforces.com/problemset/problem/2/B) | [The least round way](src/2B.cpp) |
@@ -14,6 +16,7 @@
 | [7A](https://codeforces.com/problemset/problem/7/A) | [Kalevitch and Chess](src/7A.cpp) |
 | [7B](https://codeforces.com/problemset/problem/7/B) | [Memory Manager](src/7B.cpp) |
 | [7C](https://codeforces.com/problemset/problem/7/C) | [Line](src/7C.cpp) |
+| [8A](https://codeforces.com/problemset/problem/8/A) | [Train and Peter](src/8A.cpp) |
 | [8B](https://codeforces.com/problemset/problem/8/B) | [Obsession with Robots](src/8B.cpp) |
 | [344A](https://codeforces.com/problemset/problem/344/A) | [Magnets](src/344A.cpp) |
 | [467A](https://codeforces.com/problemset/problem/467/A) | [George and Accommodation](src/467A.cpp) |
