@@ -18,6 +18,7 @@
 | [7C](https://codeforces.com/problemset/problem/7/C) | [Line](src/7C.cpp) |
 | [8A](https://codeforces.com/problemset/problem/8/A) | [Train and Peter](src/8A.cpp) |
 | [8B](https://codeforces.com/problemset/problem/8/B) | [Obsession with Robots](src/8B.cpp) |
+| [16E](https://codeforces.com/problemset/problem/16/E) | [Fish](src/16E.cpp) |
 | [344A](https://codeforces.com/problemset/problem/344/A) | [Magnets](src/344A.cpp) |
 | [467A](https://codeforces.com/problemset/problem/467/A) | [George and Accommodation](src/467A.cpp) |
 | [486A](https://codeforces.com/problemset/problem/486/A) | [Calculating Function](src/486A.cpp) |
