@@ -27,4 +27,5 @@
 | [1030A](https://codeforces.com/problemset/problem/1030/A) | [In Search of an Easy Problem](src/1030A.cpp) |
 | [1566B](https://codeforces.com/problemset/problem/1566/B) | [MIN-MEX Cut](src/1566B.cpp) |
 | [1566C](https://codeforces.com/problemset/problem/1566/C) | [MAX-MEX Cut](src/1566C.cpp) |
+| [1807G2](https://codeforces.com/problemset/problem/18072/G) | [](src/1807G2.cpp) |
 
