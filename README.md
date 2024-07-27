@@ -25,6 +25,7 @@
 | [467A](https://codeforces.com/problemset/problem/467/A) | [George and Accommodation](src/467A.cpp) |
 | [486A](https://codeforces.com/problemset/problem/486/A) | [Calculating Function](src/486A.cpp) |
 | [1030A](https://codeforces.com/problemset/problem/1030/A) | [In Search of an Easy Problem](src/1030A.cpp) |
+| [1042B](https://codeforces.com/problemset/problem/1042/B) | [Vitamins](src/1042B.cpp) |
 | [1097B](https://codeforces.com/problemset/problem/1097/B) | [Petr and a Combination Lock](src/1097B.cpp) |
 | [1553C](https://codeforces.com/problemset/problem/1553/C) | [Penalty](src/1553C.cpp) |
 | [1566B](https://codeforces.com/problemset/problem/1566/B) | [MIN-MEX Cut](src/1566B.cpp) |
