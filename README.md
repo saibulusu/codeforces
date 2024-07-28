@@ -23,6 +23,7 @@
 | [16E](https://codeforces.com/problemset/problem/16/E) | [Fish](src/16E.cpp) |
 | [344A](https://codeforces.com/problemset/problem/344/A) | [Magnets](src/344A.cpp) |
 | [467A](https://codeforces.com/problemset/problem/467/A) | [George and Accommodation](src/467A.cpp) |
+| [476B](https://codeforces.com/problemset/problem/476/B) | [Dreamoon and WiFi](src/476B.cpp) |
 | [486A](https://codeforces.com/problemset/problem/486/A) | [Calculating Function](src/486A.cpp) |
 | [1030A](https://codeforces.com/problemset/problem/1030/A) | [In Search of an Easy Problem](src/1030A.cpp) |
 | [1042B](https://codeforces.com/problemset/problem/1042/B) | [Vitamins](src/1042B.cpp) |
