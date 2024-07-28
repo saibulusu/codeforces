@@ -48,9 +48,11 @@ readme_content+="|:--|:--|\n"
 
 for file in "${cpp_files[@]}"; do
   problem_id="$file"
-  num=${problem_id//[!0-9]/}
-  letter=${problem_id//[0-9]/}
-  
+#  num=${problem_id//[!0-9]/}
+#  letter=${problem_id//[0-9]/}
+  num=$(echo "$problem_id" | sed -E 's/^([0-9]+).*/\1/')
+  letter=$(echo "$problem_id" | sed -E 's/^[0-9]+(.*)/\1/') 
+
   problem_name=$(get_problem_name "$num" "$letter" "$problem_list")
   
   readme_content+="| [$problem_id](https://codeforces.com/problemset/problem/$num/$letter) | [$problem_name](src/$file.cpp) |\n"
