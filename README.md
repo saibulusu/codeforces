@@ -21,6 +21,9 @@
 | [8B](https://codeforces.com/problemset/problem/8/B) | [Obsession with Robots](src/8B.cpp) |
 | [8C](https://codeforces.com/problemset/problem/8/C) | [Looking for Order](src/8C.cpp) |
 | [16E](https://codeforces.com/problemset/problem/16/E) | [Fish](src/16E.cpp) |
+| [61A](https://codeforces.com/problemset/problem/61/A) | [Ultra-Fast Mathematician](src/61A.cpp) |
+| [136A](https://codeforces.com/problemset/problem/136/A) | [Presents](src/136A.cpp) |
+| [200B](https://codeforces.com/problemset/problem/200/B) | [Drinks](src/200B.cpp) |
 | [344A](https://codeforces.com/problemset/problem/344/A) | [Magnets](src/344A.cpp) |
 | [467A](https://codeforces.com/problemset/problem/467/A) | [George and Accommodation](src/467A.cpp) |
 | [476B](https://codeforces.com/problemset/problem/476/B) | [Dreamoon and WiFi](src/476B.cpp) |
