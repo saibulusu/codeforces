@@ -24,10 +24,13 @@
 | [61A](https://codeforces.com/problemset/problem/61/A) | [Ultra-Fast Mathematician](src/61A.cpp) |
 | [136A](https://codeforces.com/problemset/problem/136/A) | [Presents](src/136A.cpp) |
 | [200B](https://codeforces.com/problemset/problem/200/B) | [Drinks](src/200B.cpp) |
+| [228A](https://codeforces.com/problemset/problem/228/A) | [Is your horseshoe on the other hoof?](src/228A.cpp) |
 | [344A](https://codeforces.com/problemset/problem/344/A) | [Magnets](src/344A.cpp) |
 | [467A](https://codeforces.com/problemset/problem/467/A) | [George and Accommodation](src/467A.cpp) |
 | [476B](https://codeforces.com/problemset/problem/476/B) | [Dreamoon and WiFi](src/476B.cpp) |
 | [486A](https://codeforces.com/problemset/problem/486/A) | [Calculating Function](src/486A.cpp) |
+| [492B](https://codeforces.com/problemset/problem/492/B) | [Vanya and Lanterns](src/492B.cpp) |
+| [705A](https://codeforces.com/problemset/problem/705/A) | [Hulk](src/705A.cpp) |
 | [1030A](https://codeforces.com/problemset/problem/1030/A) | [In Search of an Easy Problem](src/1030A.cpp) |
 | [1042B](https://codeforces.com/problemset/problem/1042/B) | [Vitamins](src/1042B.cpp) |
 | [1097B](https://codeforces.com/problemset/problem/1097/B) | [Petr and a Combination Lock](src/1097B.cpp) |
