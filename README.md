@@ -26,6 +26,7 @@
 | [200B](https://codeforces.com/problemset/problem/200/B) | [Drinks](src/200B.cpp) |
 | [228A](https://codeforces.com/problemset/problem/228/A) | [Is your horseshoe on the other hoof?](src/228A.cpp) |
 | [344A](https://codeforces.com/problemset/problem/344/A) | [Magnets](src/344A.cpp) |
+| [466A](https://codeforces.com/problemset/problem/466/A) | [Cheap Travel](src/466A.cpp) |
 | [467A](https://codeforces.com/problemset/problem/467/A) | [George and Accommodation](src/467A.cpp) |
 | [476B](https://codeforces.com/problemset/problem/476/B) | [Dreamoon and WiFi](src/476B.cpp) |
 | [486A](https://codeforces.com/problemset/problem/486/A) | [Calculating Function](src/486A.cpp) |
