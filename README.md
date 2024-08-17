@@ -21,6 +21,7 @@
 | [8A](https://codeforces.com/problemset/problem/8/A) | [Train and Peter](src/8A.cpp) |
 | [8B](https://codeforces.com/problemset/problem/8/B) | [Obsession with Robots](src/8B.cpp) |
 | [8C](https://codeforces.com/problemset/problem/8/C) | [Looking for Order](src/8C.cpp) |
+| [9B](https://codeforces.com/problemset/problem/9/B) | [Running Student](src/9B.cpp) |
 | [12A](https://codeforces.com/problemset/problem/12/A) | [Super Agent](src/12A.cpp) |
 | [12B](https://codeforces.com/problemset/problem/12/B) | [Correct Solution?](src/12B.cpp) |
 | [12C](https://codeforces.com/problemset/problem/12/C) | [Fruits](src/12C.cpp) |
