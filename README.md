@@ -17,6 +17,7 @@
 | [7A](https://codeforces.com/problemset/problem/7/A) | [Kalevitch and Chess](src/7A.cpp) |
 | [7B](https://codeforces.com/problemset/problem/7/B) | [Memory Manager](src/7B.cpp) |
 | [7C](https://codeforces.com/problemset/problem/7/C) | [Line](src/7C.cpp) |
+| [7D](https://codeforces.com/problemset/problem/7/D) | [Palindrome Degree](src/7D.cpp) |
 | [8A](https://codeforces.com/problemset/problem/8/A) | [Train and Peter](src/8A.cpp) |
 | [8B](https://codeforces.com/problemset/problem/8/B) | [Obsession with Robots](src/8B.cpp) |
 | [8C](https://codeforces.com/problemset/problem/8/C) | [Looking for Order](src/8C.cpp) |
