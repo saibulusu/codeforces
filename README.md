@@ -25,6 +25,7 @@
 | [9C](https://codeforces.com/problemset/problem/9/C) | [Hexadecimal's Numbers](src/9C.cpp) |
 | [9D](https://codeforces.com/problemset/problem/9/D) | [How many trees?](src/9D.cpp) |
 | [10A](https://codeforces.com/problemset/problem/10/A) | [Power Consumption Calculation](src/10A.cpp) |
+| [10B](https://codeforces.com/problemset/problem/10/B) | [Cinema Cashier](src/10B.cpp) |
 | [12A](https://codeforces.com/problemset/problem/12/A) | [Super Agent](src/12A.cpp) |
 | [12B](https://codeforces.com/problemset/problem/12/B) | [Correct Solution?](src/12B.cpp) |
 | [12C](https://codeforces.com/problemset/problem/12/C) | [Fruits](src/12C.cpp) |
