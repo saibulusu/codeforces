@@ -36,6 +36,7 @@
 | [69A](https://codeforces.com/problemset/problem/69/A) | [Young Physicist](src/69A.cpp) |
 | [96A](https://codeforces.com/problemset/problem/96/A) | [Football](src/96A.cpp) |
 | [118A](https://codeforces.com/problemset/problem/118/A) | [String Task](src/118A.cpp) |
+| [122A](https://codeforces.com/problemset/problem/122/A) | [Lucky Division](src/122A.cpp) |
 | [136A](https://codeforces.com/problemset/problem/136/A) | [Presents](src/136A.cpp) |
 | [200B](https://codeforces.com/problemset/problem/200/B) | [Drinks](src/200B.cpp) |
 | [228A](https://codeforces.com/problemset/problem/228/A) | [Is your horseshoe on the other hoof?](src/228A.cpp) |
