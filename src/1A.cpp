@@ -1,16 +1,15 @@
-#include <cmath>
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
+#define llu unsigned long long int
+
 int main() {
-  double n, m, a;
+  llu n, m, a;
   cin >> n >> m >> a;
 
-  long long int l = ceil(n / a);
-  long long int w = ceil(m / a);
-
-  cout << l * w << endl;
+  cout << ((n + a - 1) / a) * ((m + a - 1) / a) << endl;
 
   return 0;
 }
